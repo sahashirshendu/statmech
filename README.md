@@ -1,1 +1,1 @@
-# statmech
+# StatMech
