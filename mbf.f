@@ -11,9 +11,9 @@
          m=1
          k=1
          T=1
-         c=3.14**(-0.5)
-         d=1
-         f=2*c*x**0.5*exp(-d*x)
+         a=3.142**(-0.5)
+         b=1
+         f=2*a*x**0.5*exp(-b*x)
       end
 
       subroutine simpson(f, a, b, n, csi)
