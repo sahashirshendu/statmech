@@ -7,11 +7,11 @@ ep = [1, 6]
 
 def E(ep, T):
     sum = 0
-    mup = 0
+    s = 0
     for i in range(len(ep)):
         sum = sum + ep[i] * exp(- ep[i] / (k * T))
-        mup = mup + exp(- ep[i] / (k * T))
-    return sum * N / mup
+        s = s + exp(- ep[i] / (k * T))
+    return sum * N / s
 
 EN = np.zeros(N)
 for i in range(N):
