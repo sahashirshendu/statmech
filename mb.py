@@ -1,21 +1,20 @@
-import numpy as np
-import matplotlib.pyplot as plt
+from pylab import *
 
 k = 1
 N = 1000
-T = np.linspace(0.01, 20, N)
+T = linspace(0.01, 20, N)
 ep = [1, 6]
 
 def mkt(ep, T):
     sum = 0
     for i in range(len(ep)):
-        sum += np.exp(- ep[i] / (k * T))
+        sum += exp(- ep[i] / (k * T))
     return sum
 
 def E(ep, T):
     sum = 0
     for i in range(len(ep)):
-        sum += ep[i] * np.exp(- ep[i] / (k * T))
+        sum += ep[i] * exp(- ep[i] / (k * T))
     return sum * N / mkt(ep, T)
 
 EN = np.zeros(N)
@@ -27,6 +26,6 @@ h = 19.99 / (N - 1)
 for i in range(N - 1):
     C[i] = (EN[i + 1] - EN[i]) / h
 
-plt.plot(T, EN)
-plt.plot(T, C)
-plt.show()
+plot(T, EN)
+plot(T, C)
+show()
