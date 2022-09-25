@@ -9,8 +9,8 @@ def E(ep, T):
     sum = 0
     s = 0
     for i in range(len(ep)):
-        sum = sum + ep[i] * exp(- ep[i] / (k * T))
         s = s + exp(- ep[i] / (k * T))
+        sum = sum + ep[i] * exp(- ep[i] / (k * T))
     return sum * N / s
 
 EN = np.zeros(N)
