@@ -5,7 +5,7 @@ N = 1000
 T = linspace(0.01, 20, N)
 ep = [1, 6]
 
-def mkt(ep, T):
+def mup(ep, T):
     sum = 0
     for i in range(len(ep)):
         sum += exp(- ep[i] / (k * T))
@@ -15,7 +15,7 @@ def E(ep, T):
     sum = 0
     for i in range(len(ep)):
         sum += ep[i] * exp(- ep[i] / (k * T))
-    return sum * N / mkt(ep, T)
+    return sum * N / mup(ep, T)
 
 EN = np.zeros(N)
 for i in range(N):
