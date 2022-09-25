@@ -9,8 +9,8 @@ def E(ep, T):
     sum = 0
     mup = 0
     for i in range(len(ep)):
-        sum += ep[i] * exp(- ep[i] / (k * T))
-        mup += exp(- ep[i] / (k * T))
+        sum = sum + ep[i] * exp(- ep[i] / (k * T))
+        mup = mup + exp(- ep[i] / (k * T))
     return sum * N / mup
 
 EN = np.zeros(N)
