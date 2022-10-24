@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.rcParams.update({"text.usetex": True})
 E = np.linspace(-0.5, 0.5, 1001)  # energy
 u = 0  # chemeical potential is taken to be 0
 e = 1.602e-19 # charge of electron
