@@ -17,6 +17,7 @@ plt.show()
 def p(v):
     return 2 * a * v**0.5 * np.exp(-b * v)
 
+v = np.linspace(0, 10, 100)
 
 m = 1
 k = 1
@@ -39,3 +40,6 @@ for i in range(1, n):
 I = (h / 3) * sum
 
 print(I)
+
+plt.plot(v, p(v))
+plt.show()
