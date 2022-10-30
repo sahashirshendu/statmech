@@ -17,7 +17,7 @@ plt.show()
 def p(v):
     return 2 * a * v**0.5 * np.exp(-b * v)
 
-v = np.linspace(0, 10, 100)
+v = np.linspace(0, 5, 100)
 
 m = 1
 k = 1
