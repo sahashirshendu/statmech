@@ -36,11 +36,15 @@ for i in range(n):
             return x**1.5/(exp((x-mu[i])/t[i])-1.0)
         cf[i] = 1-2/(2.612*pi**0.5)*quad(l,1e-5,100)[0]
 
+title("Chemical Potential")
 plot(t, mu)
 show()
+title("Energy")
 plot(t, en)
 show()
+title("Heat Capacity")
 plot(t, cv)
 show()
+title("Condensate Fraction")
 plot(t, cf)
 show()
