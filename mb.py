@@ -10,9 +10,9 @@ def E(ep, T):
     sum = 0
     s = 0
     for i in range(len(ep)):
-        s = s + exp(-ep[i]/(k*T))
+        s = s+exp(-ep[i]/(k*T))
         sum = sum+ep[i]*exp(-ep[i]/(k*T))
-    return sum * N / s
+    return sum*N/s
 
 e1 = zeros(N)
 e2 = zeros(N)
@@ -29,7 +29,11 @@ for i in range(N-1):
 
 plot(T,e1)
 plot(T,e2)
+xlabel('T')
+ylabel('E')
 show()
 plot(T,c1)
 plot(T,c2,'--')
+xlabel('T')
+ylabel('C')
 show()
