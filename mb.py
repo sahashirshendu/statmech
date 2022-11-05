@@ -2,7 +2,7 @@ from pylab import *
 
 k = 1
 N = 1000
-T = linspace(0.01,20,N)
+T = linspace(0.01,20,1000)
 ev1 = [1,6]
 ev2 = [2,7]
 
