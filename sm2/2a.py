@@ -10,9 +10,9 @@ T=data[:,0]**0.5
 cv=data[:,1]*T
 
 def cvf(T,tf,td):
-    return pi**2*n*na*k/(2*tf) * T + 12*pi**4*n*na*k/(5*td**3) * T**3
+    return pi**2*n*na*k/(2*tf)*T+12*pi**4*n*na*k/(5*td**3)*T**3
 
-param,_ = curve_fit(cvf,T,cv)
+param,_=curve_fit(cvf,T,cv)
 tf=param[0]
 td=param[1]
 print("Debye Temperature =",td,"K")

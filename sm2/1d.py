@@ -13,8 +13,8 @@ cv=data[:,1]
 def cvl(T, td):
     return 12*pi**4/5*n*na*k*(T/td)**3
 
-param,_ = curve_fit(cvl,T,cv)
-td = param[0]
+param,_=curve_fit(cvl,T,cv)
+td=param[0]
 print("Debye Temperature =", td, "K")
 plot(T,cv,'.',label="Data")
 plot(T,cvl(T,td),label="Fitted Plot")
