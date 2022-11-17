@@ -12,7 +12,7 @@ def trap(f,a,b,n):
         sum+=2*f(a+i*h)
     return h/2*sum
 
-T = linspace(1e-5, 200, 100)
+T=linspace(1e-5,200,100)
 
 def cv(x):
     return x**4*exp(x)/(exp(x)-1)**2
