@@ -8,7 +8,7 @@ na=6.02e23
 data=loadtxt('specific_heat.txt',delimiter=',')
 data=data[data[:,0].argsort()]
 T=data[:,0]**(1/3)
-cv=data[:,1]
+cv=data[:,1]/1000
 
 def cvl(T, td):
     return 12*pi**4/5*n*na*k*(T/td)**3
