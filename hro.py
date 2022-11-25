@@ -14,7 +14,7 @@ for i in range(500):
     U1[i] = n*k*T[i]
     U2[i] = 0.5*n*hb*w/tanh(hb*w/(2*k*T[i]))
     C1[i] = n*k
-    C2[i] = n*k*(hb*w/(k*T[i]))**2*exp(hb*w/(k*T[i]))/(exp(hb*w/(k*T[i]))-1)**2
+    C2[i] = 0.25*n*k*(hb*w/(k*T[i]))**2/(sinh(hb*w/(2*k*T[i])))**2
 
 plot(T,U1,label='Classical')
 plot(T,U2,label='Quantum')
