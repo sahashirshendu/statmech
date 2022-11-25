@@ -7,14 +7,14 @@ def f(n):
     return sum
 
 n = arange(1,201,1)
-F1 = zeros(200)
-F2 = zeros(200)
+f1 = zeros(200)
+f2 = zeros(200)
 for i in range(200):
-    F1[i] = f(n[i])
-    F2[i] = n[i]*log(n[i])-n[i]
+    f1[i] = f(n[i])
+    f2[i] = n[i]*log(n[i])-n[i]
 
-plot(n, F1, label='ln(N!)')
-plot(n, F2, label='Nln(N)-N')
+plot(n,f1,label='ln(N!)')
+plot(n,f2,label='Nln(N)-N')
 xlabel('N')
 xscale('log')
 yscale('log')
