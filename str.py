@@ -13,8 +13,8 @@ for i in range(200):
     f1[i] = f(n[i])
     f2[i] = n[i]*log(n[i])-n[i]
 
-plot(n,f1,label='ln(N!)')
-plot(n,f2,label='Nln(N)-N')
+plot(n,f1,label='$f_1$')
+plot(n,f2,label='$f_2$')
 xlabel('N')
 xscale('log')
 yscale('log')
