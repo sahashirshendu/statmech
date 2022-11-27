@@ -7,6 +7,5 @@
 - [Debye Model](./deb.py)
   - [Debye Temperature](./dfit.py)
   - [Debye, Fermi Temperatures](./fdfit.py)
-
 - [Stirling Approximation](./str.py)
 - [Harmonic Oscillators](./hro.py)
