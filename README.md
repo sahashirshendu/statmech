@@ -4,3 +4,4 @@
 2. [Maxwell-Boltzmann Particles](./mb.py)
 3. [Bosons](./bd.py)
 3. [Fermions](./fm.py)
+4. [Stirling Approximation](./str.py)
