@@ -11,7 +11,7 @@ en = zeros(n)
 cv = zeros(n)
 cf = zeros(n)
 
-for i in range(n-1,1,-1):
+for i in range(n-1,0,-1):
     mt = linspace(um,1.0,m)
     for j in range(m):
         def f(x):

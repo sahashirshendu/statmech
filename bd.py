@@ -11,7 +11,7 @@ en = zeros(n)
 cv = zeros(n)
 cf = zeros(n)
 
-for i in range(n-1,1,-1):
+for i in range(n-1,0,-1):
     if t[i]>1:
         mt = linspace(um,1e-5,m)
         for j in range(m):
