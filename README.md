@@ -1,4 +1,4 @@
-# StatMech
+# Statistical Mechanics
 
 - [Maxwell-Boltzmann Distribution](./mbf.py)
 - [Maxwell-Boltzmann Particles](./mb.py)
